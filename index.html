@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tryptophane - Battle Royale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HUD -->
+    <div class="hud">
+        <div class="hud-left">
+            <div class="hp-display">
+                <span class="hp-label">HP:</span>
+                <span id="hp" class="hp-value">3000</span>
+            </div>
+            <div class="power-bar">
+                <div id="powerFill" class="power-fill"></div>
+                <span class="power-label">MOC</span>
+            </div>
+        </div>
+        <div class="hud-right">
+            <div id="ultBadge" class="ult-badge">ULT</div>
+            <div class="alive-counter">
+                <span class="alive-label">Żywi:</span>
+                <span id="alive" class="alive-value">10</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Canvas gry -->
+    <canvas id="game"></canvas>
+
+    <!-- Ekran końcowy -->
+    <div id="endScreen" class="end-screen">
+        <div class="end-content">
+            <h1 id="resultTitle" class="result-title">Koniec gry!</h1>
+            <p id="resultDesc" class="result-desc">Opis wyniku</p>
+            <button id="restartBtn" class="restart-btn">Zagraj ponownie</button>
+        </div>
+    </div>
+
+    <!-- Wybór trybu gry -->
+    <div id="modeSelect" class="mode-select">
+        <div class="select-content">
+            <h1 class="select-title">Wybierz tryb gry</h1>
+            <div id="modeGrid" class="mode-grid"></div>
+        </div>
+    </div>
+
+    <!-- Wybór postaci -->
+    <div id="charSelect" class="char-select">
+        <div class="select-content">
+            <h1 class="select-title">Wybierz postać</h1>
+            <div id="charGrid" class="char-grid"></div>
+        </div>
+    </div>
+
+    <!-- Kontrolki mobilne (dodawane dynamicznie przez JS) -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
